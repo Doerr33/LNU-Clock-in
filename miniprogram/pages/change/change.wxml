@@ -1,0 +1,77 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl text-grey">打卡信息修改
+      <text class="text-df text-grey"></text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-grey">By:Doerr</text>
+    </view>
+  </view>
+
+  <view wx:if="{{isLife}}" class="">
+
+    <view class="padding-xl">
+
+      <text class="cuIcon-friendaddfill margin-top-sm  text-green"></text>请输入学号
+      <input bindinput="textA" class="margin-top-sm cu-btn block line-green rg">
+
+      </input>
+
+
+    </view>
+    <view class="padding-xl">
+      <button type="primary" bindtap="submit">
+        <text></text>查询
+      </button>
+    </view>
+  </view>
+  <view class="">
+
+    <view wx:for="{{number}}" class="padding-xl">
+      <text class="cuIcon-friendfill margin-top-sm rg"></text>姓名
+      <view class="margin-top-sm cu-btn block line-black rg">
+        {{item.title}}
+      </view>
+      <text class="cuIcon-friendaddfill margin-top-sm  text-blue"></text>学号(账号)
+      <view class="margin-top-sm cu-btn block line-blue rg">
+        {{item.author}}
+      </view>
+      <text class="cuIcon-writefill margin-top-sm  text-purple"></text>密码
+      <view class="margin-top-sm cu-btn block line-purple rg">
+        *********
+      </view>
+      <text class="cuIcon-writefill margin-top-sm  text-green"></text>校区（例:崇山 例:蒲河）
+      <view class="margin-top-sm cu-btn block line-purple rg">
+        {{item.school}}
+      </view>
+      <view class="padding-xl">
+    </view>
+    </view>
+    <view wx:for="{{number}}" class="padding-xl">
+
+      <view bindinput="textC" class=" change margin-top-sm cu-btn block line-red rg">
+        修改打卡信息
+      </view>
+      <text class="cuIcon-friendfill margin-top-sm rg"></text>姓名
+      <input bindinput="textB" class="margin-top-sm cu-btn block line-black rg">
+        
+      </input>
+      <text class="cuIcon-writefill margin-top-sm  text-purple"></text>密码
+      <input bindinput="textC" class="margin-top-sm cu-btn block line-purple rg">
+        
+      </input>
+      <text class="cuIcon-writefill margin-top-sm  text-green"></text>校区（例:崇山 例:蒲河）
+      <input bindinput="textD" class="margin-top-sm cu-btn block line-purple rg">
+        
+      </input>
+      <view class="padding-xl">
+      <button type="primary" bindtap="submit1">
+        <text></text>修改
+      </button>
+    </view>
+    </view>
+  </view>
+
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

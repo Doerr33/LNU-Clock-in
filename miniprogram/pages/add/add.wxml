@@ -1,0 +1,41 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl text-grey">添加打卡人信息
+      <text class="text-df text-grey"></text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-grey">By:Doerr</text>
+    </view>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+    <view class="padding-xl">
+      <text class="cuIcon-friendfill margin-top-sm rg"></text>姓名
+      <input bindinput="textA" class="margin-top-sm cu-btn block line-black rg">
+
+      </input>
+      <text class="cuIcon-friendaddfill margin-top-sm  text-blue"></text>学号(账号)
+      <input bindinput="textB" class="margin-top-sm cu-btn block line-blue rg">
+
+      </input>
+      <text class="cuIcon-writefill margin-top-sm  text-purple"></text>密码
+      <input bindinput="textC" class="margin-top-sm cu-btn block line-purple rg">
+
+      </input>
+      <text class="cuIcon-writefill margin-top-sm  text-green"></text>校区（例:崇山 例:蒲河）
+      <input bindinput="textD" class="margin-top-sm cu-btn block line-purple rg">
+
+      </input>
+
+    </view>
+    <view class="padding-xl">
+      <button type="primary" bindtap="submit">
+        <text></text>确认添加
+      </button>
+    </view>
+  </view>
+
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

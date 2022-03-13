@@ -1,0 +1,31 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl text-grey">打卡信息删除
+      <text class="text-df text-grey"></text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-grey">By:Doerr</text>
+    </view>
+  </view>
+
+  <view class="">
+
+    <view class="padding-xl">
+
+      <text class="cuIcon-friendaddfill margin-top-sm  text-red"></text>请输入学号
+      <input bindinput="textA" class="margin-top-sm cu-btn block line-red rg">
+
+      </input>
+
+
+    </view>
+    <view class="padding-xl">
+      <button class="buttonDel" bindtap="submit">
+        <text></text>删除
+      </button>
+    </view>
+  </view>
+
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

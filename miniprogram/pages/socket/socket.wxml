@@ -1,0 +1,78 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl text-grey">Ping网络测试
+      <text class="text-df text-grey"></text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-grey">By:Doerr</text>
+    </view>
+  </view>
+
+  <view class="">
+
+    <view wx:if="{{isLife}}" class="padding-xl">
+
+      <text class="cuIcon-friendaddfill margin-top-sm  text-green"></text>请输入ip或者域名
+      <input bindinput="textA" class="margin-top-sm cu-btn block line-green rg">
+
+      </input>
+      <view class="padding-xl">
+        <button type="primary" bindtap="submit">
+          <text></text>查询
+        </button>
+
+      </view>
+
+    </view>
+    <view wx:if="{{isLife}}" class="padding-xl">
+      <view class="padding-xl">
+        <button type="primary" bindtap="submit1">
+          <text></text>打开QQ
+        </button>
+
+      </view>
+
+    </view>
+    <view wx:if="{{isLife}}" class="padding-xl">
+      <view class="padding-xl">
+        <button type="primary" bindtap="submit2">
+          <text></text>打开微信
+        </button>
+
+      </view>
+
+    </view>
+    <view wx:if="{{isLife}}" class="padding-xl">
+      <view class="padding-xl">
+        <button type="primary" bindtap="submit3">
+          <text></text>截图
+        </button>
+        <image mode = "widthFix"  bindtap="onClick" src="data:image/png;base64,{{resSocket}}"></image>
+      </view>
+
+    </view>
+    <view wx:if="{{isLife}}" class="padding-xl">
+      <view class="padding-xl">
+        <button type="primary" bindtap="submit4">
+          <text></text>关机
+        </button>
+
+      </view>
+
+    </view>
+  </view>
+  <view class="">
+
+    <view wx:if="{{!isLife}}" class="padding-xl">
+
+      <text class="cuIcon-writefill margin-top-sm  text-green"></text>Ping:{{texta}}
+      <view class="borderView margin-top-sm block line-green rg">
+        <text>{{resSocket}}</text>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

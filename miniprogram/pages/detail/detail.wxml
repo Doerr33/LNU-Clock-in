@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="table">
+        <view class="tr">
+            <view class="th">学号</view>
+            <view class="th">备注</view>
+        </view>
+        <view class="tr" wx:for="{{number}}">
+            <view class="td">{{item.id - 13}}</view>
+            <view class="td">{{item.title}}</view>
+            <view class="td">{{item.author}}</view>
+        </view>
+    </view>
+</view>

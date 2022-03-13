@@ -1,0 +1,43 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl text-grey">疫情自动打卡
+      <text class="text-df text-grey">v1.0</text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-grey">By:Doerr</text>
+    </view>
+    
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+    <view class="padding-xl">
+      
+      <button bindtap="toAdmin" class="margin-top-sm cu-btn block line-black lg">
+        <text class="cuIcon-friendfill"></text>管理员登录
+      </button>
+      <button bindtap="toAdd" class="margin-top-sm cu-btn block line-blue lg">
+        <text class="cuIcon-friendaddfill"></text>添加打卡人
+      </button>
+      <button bindtap="toChange" class="margin-top-sm cu-btn block line-purple lg">
+        <text class="cuIcon-writefill"></text>修改打卡人
+      </button>
+      <button bindtap="toDel" class="margin-top-sm cu-btn block line-red lg">
+        <text class="cuIcon-deletefill"></text>删除打卡人
+      </button>
+      <button bindtap="toSearch" class="margin-top-sm cu-btn block line-green lg">
+        <text class="cuIcon-attentionfill"></text>查找打卡人
+      </button>
+      <button bindtap="getWIFI" class="margin-top-sm cu-btn block line-cyan lg">
+        <text class="cuIcon-wifi"></text>Ping网络测试
+      </button>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-red">声明:程序仅提供默认在校打卡,使用者请按真实信息填写,否则后果自负</text>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+  
+</scroll-view>
+

@@ -1,0 +1,34 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/images/logo.png" class="png" mode="widthFix"></image>
+    <view class="text-xl text-grey">管理员登录
+      <text class="text-df text-grey"></text>
+    </view>
+    <view class="margin-top-sm">
+      <text class="text-grey">By:Doerr</text>
+    </view>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+    <view class="padding-xl">
+      
+      <text class="cuIcon-friendaddfill margin-top-sm  text-green"></text>账号
+      <input bindinput="textA" class="margin-top-sm cu-btn block line-green rg">
+
+      </input>
+      <text class="cuIcon-writefill margin-top-sm  text-green"></text>密码
+      <input bindinput="textB" class="margin-top-sm cu-btn block line-green rg">
+
+      </input>
+
+    </view>
+    <view class="padding-xl">
+      <button type="primary" bindtap="submit">
+        <text></text>登录
+      </button>
+    </view>
+  </view>
+
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
